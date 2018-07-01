@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="sw.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="text-cap text-center">currency converter</h1>
+        </div>
+
+    </header>
+    <div class="converter">
+        <div class="container">
+            <div class="rel">
+                <input value="" id="amount" placeholder="Enter amount" type="text">
+                <p id="error">please enter a valid number</p>
+            </div>
+
+            <select name="cur1" id="cur1">
+          
+      </select>
+            <i id="change" class="exchange-icon">&#xf0ec;</i>
+            <select name="cur2" id="cur2">
+           
+      </select>
+            <div class="text-upper" id="result"></div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/idb@2.1.3/lib/idb.min.js"></script>
+<script src="src/main.js"></script>
+
+
+</html>

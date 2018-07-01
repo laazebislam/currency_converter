@@ -1,0 +1,156 @@
+/* general rules */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'exchange';
+    src: url('./font/exchange.eot?69455303');
+    src: url('./font/exchange.eot?69455303#iefix') format('embedded-opentype'), url('./font/exchange.woff?69455303') format('woff'), url('./font/exchange.ttf?69455303') format('truetype'), url('./font/exchange.svg?69455303#exchange') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.exchange-icon {
+    font-family: "exchange";
+    font-style: normal;
+    font-weight: normal;
+    cursor: pointer;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    color: #015b9d;
+    margin-left: .2em;
+    margin-right: 2%;
+    margin-right: 2%;
+    font-size: 130%;
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* helper class */
+
+.text-cap {
+    text-transform: capitalize;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* header style */
+
+header {
+    background-color: #2892D7;
+    opacity: 0.7;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+    padding: 10px 0;
+    letter-spacing: 2px;
+}
+
+
+/* convertter style */
+
+.converter {
+    padding: 90px 0;
+}
+
+.converter input {
+    width: 15%;
+    padding: 15px 18px;
+    outline: none;
+    color: #4687B7;
+    font-size: 1em;
+    margin-right: 2%;
+}
+
+.converter input:focus,
+.converter input:active {
+    border: 2px solid #015b9d;
+}
+
+.converter .rel {
+    position: relative;
+    display: inline;
+}
+
+.converter #error {
+    color: #D72840;
+    left: 0;
+    top: 0;
+    position: absolute;
+    margin-top: 50px;
+    display: none;
+}
+
+.converter select {
+    padding: 15px 20px;
+    width: 30%;
+    border-bottom: 2px solid #015b9d;
+    margin-right: 2%;
+    color: #4687B7;
+    outline: none;
+    font-size: 1em;
+}
+
+.converter #result {
+    padding: 40px 0;
+    font-size: 1.8em;
+    color: #666;
+}
+
+.converter #result span {
+    color: #4687B7;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width:684px) {
+    .converter .rel {
+        margin: 0 auto;
+        display: block;
+        width: 90%;
+    }
+    .converter input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .converter select {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 20px;
+    }
+    .exchange-icon {
+        margin-top: 15px;
+    }
+}
